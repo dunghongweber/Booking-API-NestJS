@@ -1,6 +1,8 @@
 Here is the work that I've done for the backend of the Developers Technical Test.
 Since I've never learned Typescript and NestJS before, I only studied a bit of NodeJS and ExpressJS for backend, I couldn't use the .env file correctly.
 
+Dung Hong
+
 # auth folder
 
 The auth folder has all the codes that deal with user login, hashing password, nestjs guard, and JWT authentication.
@@ -44,5 +46,3 @@ approve a selected booking, this will also remove it from the database. Need to 
 ### `http://localhost:5000/booking/reject/[id]`
 
 reject a selected booking, this will also remove it from the database. Need to have a correct id of an existing booking in the database.
-
-Dung Hong
