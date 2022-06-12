@@ -6,8 +6,8 @@ export const BookingSchema =  new mongoose.Schema({
     datetime1: { type:String, required: true},
     datetime2: { type:String, required: true},
     datetime3: { type:String, required: true},
-    bookingStatus: { type:String, required: true},
-    createdBy: {type: String},
+    bookingStatus: { type:String},
+    createdBy: {type: String, required: true},
     approvedDate: {type: String},
     rejectedReason: {type: String},
 });
