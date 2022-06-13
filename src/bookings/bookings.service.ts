@@ -11,9 +11,9 @@ export class BookingService{
     async getAllBooking(username: string, role: string){
         let result;
         if(username !== 'admin' && role !== 'admin'){
-            result = await this.bookingModel.find({createdBy: username}).exec();
+            result = await this.bookingModel.find({createdBy: username}).sort({createdAt: -1}).exec();
         }else{
-            result = await this.bookingModel.find().exec();
+            result = await this.bookingModel.find().sort({createdAt: -1}).exec();
         }
 
         return result;

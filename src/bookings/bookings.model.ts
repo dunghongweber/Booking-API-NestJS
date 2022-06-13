@@ -10,6 +10,7 @@ export const BookingSchema =  new mongoose.Schema({
     createdBy: {type: String, required: true},
     approvedDate: {type: String},
     rejectedReason: {type: String},
+    createdAt : { type : Date, default: Date.now }
 });
 
 export interface Booking{
