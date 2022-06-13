@@ -42,17 +42,13 @@ export class AuthService{
     //create new user, or can be modified for sign up if needed
     async createNewAccount(){
         //generate password
-        // const hash = await argon.hash('password1');
-        // const hash = await argon.hash('password2');
-        const hash = await argon.hash('passwordadmin');
+        const hash = await argon.hash('passworduser2');
 
         //create new user
         const newAccount = new this.authenModel({
-            // username: 'user1',
-            // username: 'user2',
-            username: 'admin',
+            username: 'user2',
             password: hash,
-            role: 'admin'
+            role: 'user'
         });
 
         //save new user to database
